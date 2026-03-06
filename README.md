@@ -203,11 +203,25 @@ This list matches the video demonstration order and provides a clear numbered li
 
 ## 📁 File Structure
 
-- `src/` - Application source code, scripts, and database schema
-- `phase-pdfs/` - Phase documents (Phase-1-Requirements.pdf, Phase-2-Design.pdf, Phase-3-Implementation.pdf, Phase-4-Final.pdf)
-- `docs/` - Supporting documents and reports (if any)
-
-Place project phase PDFs inside the `phase-pdfs/` folder.
+```
+Aegis-Intelligence-Database-System/
+├── README.md
+├── Project Phase Documentation/
+│   ├── Phase 1.pdf
+│   ├── Phase 2.pdf
+│   ├── Phase 3.pdf
+│   └── Phase 4.pdf
+└── src/
+    ├── app.py                  # Flask application entry point
+    ├── db_utils.py             # Database connection utilities
+    ├── generate_populate.py    # Script to generate populate.sql
+    ├── schema.sql              # Database schema definition
+    ├── populate.sql            # Sample data insertion script
+    ├── requirements.txt        # Python dependencies
+    ├── setup.sh                # Setup automation script
+    ├── media/                  # Static media files
+    └── templates/              # HTML templates for web interface
+```
 - **Output:** Confirmation dialog, then success message (fruit and person remain, only link deleted)
 
 
@@ -232,60 +246,6 @@ Place project phase PDFs inside the `phase-pdfs/` folder.
 - Session management
 - Password masking on login
 - Confirmation dialogs for destructive operations
-
----
-
-## 📁 File Structure
-
-```
-aegis-intelligence-app/
-├── src/
-│   ├── app.py                          # Main Flask application (1485 lines)
-│   ├── db_utils.py                     # Database utility functions
-│   ├── schema.sql                      # Database schema creation (19 tables)
-│   ├── populate.sql                    # Database population (57 people, 20 islands)
-│   ├── requirements.txt                # Python dependencies
-│   ├── media/
-│   │   └── Marines_Logo.jpeg           # Logo image
-│   └── templates/
-│       ├── base.html                   # Base template with theme toggle
-│       ├── login.html                  # Login page
-│       ├── dashboard.html              # Marine dashboard
-│       ├── admin_console.html          # CP0 admin console
-│       ├── error.html                  # Error page template
-│       ├── hubs/
-│       │   ├── intelligence.html       # Intelligence hub (7 queries)
-│       │   ├── analysis.html           # Tactical analysis hub (3 queries)
-│       │   └── operations.html         # Command operations hub (9 operations)
-│       ├── intel/
-│       │   ├── pirate_search.html      # Query 1
-│       │   ├── devil_fruits.html       # Query 2
-│       │   ├── marine_directory.html   # Query 3
-│       │   ├── bounty_index.html       # Query 4
-│       │   ├── will_of_d.html          # Query 5
-│       │   ├── ability_search.html     # Query 6
-│       │   └── log_decrypter.html      # Query 7
-│       ├── tactical/
-│       │   ├── crew_valuation.html     # Query 8
-│       │   ├── island_census.html      # Query 9
-│       │   └── most_wanted.html        # Query 10 (simplified)
-│       ├── operations/
-│       │   ├── register_criminal.html  # INSERT 1 (Op 11)
-│       │   ├── issue_bounty.html       # INSERT 2 (Op 12)
-│       │   ├── log_fruit.html          # INSERT 3 (Op 13)
-│       │   ├── change_status.html      # UPDATE 1 (Op 14)
-│       │   ├── update_bounty.html      # UPDATE 2 (Op 15)
-│       │   ├── consume_fruit.html      # UPDATE 3 (Op 16)
-│       │   ├── revoke_bounty.html      # DELETE 1 (Op 17)
-│       │   ├── remove_log_entry.html   # DELETE 2 (Op 18)
-│       │   └── remove_fruit_possession.html  # DELETE 3 (Op 19)
-│       └── admin/
-│           └── view_tables.html        # Admin DDL operations
-├── README.md                           # This file
-└── phase3.pdf
-└── team33.mp4
-
-```
 
 ---
 
