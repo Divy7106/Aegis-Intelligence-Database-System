@@ -198,6 +198,16 @@ This list matches the video demonstration order and provides a clear numbered li
 - **Description:** Delete Devil Fruit possession record (simulates fruit reincarnation after user death)
 - **SQL Operation:** `DELETE FROM Devil_Fruit_Possession WHERE Fruit_ID = ?`
 - **Input:** Shows table of all current possessions, click delete button
+
+---
+
+## 📁 File Structure
+
+- `src/` - Application source code, scripts, and database schema
+- `phase-pdfs/` - Phase documents (Phase-1-Requirements.pdf, Phase-2-Design.pdf, Phase-3-Implementation.pdf, Phase-4-Final.pdf)
+- `docs/` - Supporting documents and reports (if any)
+
+Place project phase PDFs inside the `phase-pdfs/` folder.
 - **Output:** Confirmation dialog, then success message (fruit and person remain, only link deleted)
 
 
